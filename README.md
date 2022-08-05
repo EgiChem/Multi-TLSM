@@ -1,6 +1,6 @@
 # Multi Liu-Silva-Macedo to calculate diffusivities in ternary systems
 
-Calculates the tracer diffusivity of a given solute in a mixture of 2 solvents.
+Calculates the tracer diffusivity of a given solute in a mixture of 2 solvents. If used please cite:"xxx"
 
 Requiered data to use:
 
@@ -14,7 +14,7 @@ Requiered data to use:
 
 
 ## Examples
-To use copy and paste on Matlab 
+Copy paste on Matlab to run, tested in Matlab 2021b
 
 ### Example 1 benzoic acid in CO2/methanol using Multi-LSM
 
