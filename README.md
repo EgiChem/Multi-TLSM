@@ -13,35 +13,43 @@ Requiered data to use:
 * AD - (optional) adjustable parameter of the model, if unknown it is set to 1.
 
 
-## Exemples
+## Examples
 To use copy and paste on Matlab 
 
-%% example 1 benzoic acid in CO2/methanol using Multi-LSM
+### Example 1 benzoic acid in CO2/methanol using Multi-LSM
 
 T = 308; %K
 Density = 0.83949; % g/cum
 x2 = 0.05; % mol/mol fraction of solvent 2
 
 % sequence is solute; solvent_1; solvent_2
+
 M = [122.124; 44.01; 32.042]; % g/mol
 dLJ = [5.65763; 3.26192; 3.79957];  % angstrom
 eLJ = [582.05; 500.71; 685.96]; % K;
 
 [D12calc_Multi_LSM] = Muli_LSM(T, Density, x2, M, dLJ, eLJ) % sqrtcm/s
 
-%% example 2 benzoic acid in CO2/methanol using Multi-LSM_AD
+
+
+### Example 2 benzoic acid in CO2/methanol using Multi-LSM_AD
 
 T = [308; 318; 328]; %K
+
 Density = [0.83949; 0.78356; 0.72005]; % g/cum
+
 x2 = [0.05; 0.05; 0.05]; % mol/mol fraction of solvent 2
 
 M = [122.12; 44.01; 32.042]; % g/mol
 
 %Function used when some of the LJ constants are unknown
+
 [dlj_solute, elj_solute] = Lennard_Jones(752.00, 45.60, 341); %Tc in K;  Pc in bar; Vc in cm3 mol-1
 
 % sequence is solute; solvent_1; solvent_2
+
 dLJ = [dlj_solute; 3.26192; 3.79957];  % angstrom
+
 eLJ = [elj_solute; 500.71; 685.96]; % K
 
 AD = 0.8674; 
