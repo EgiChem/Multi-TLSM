@@ -1,6 +1,7 @@
 # Multi Tracer Liu-Silva-Macedo to calculate diffusivities in ternary systems
 
-Calculates the tracer diffusivity of a given solute in a mixture of 2 solvents. If used please cite:"xxx"
+Calculates the tracer diffusivity of a given solute in a mixture of 2 solvents. If used please cite: B. Zêzere, I. Portugal, J.R.B. Gomes,
+C.M. Silva, Multicomponent diffusivities in supercritical and liquid ternary systems, The Journal of Supercritical Fluids, (2022) doi: https://doi.org/10.1016/j.supflu.2023.105881
 
 Requiered data to use:
 
